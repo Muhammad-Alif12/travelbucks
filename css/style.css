@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/********************* HEADER *************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 9rem;
+}
+
+.logo-header {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #222534;
+}
+
+.logo-header span {
+  color: #1f4aa8;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #888aa2;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #222534;
+}
+
+.contact:link,
+.contact:visited {
+  text-decoration: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #898ba3;
+  background: #e5e5e5;
+  border-radius: 5px;
+}
+
+.contact:hover,
+.contact:active {
+  background: #e5e5e5ab;
+}
+
+/******************** HERO SECTION ********************/
+.section-hero {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.hero::-webkit-scrollbar {
+  width: 0.1em;
+  background-color: #f5f5f5;
+}
+
+.hero-in {
+  position: relative;
+  width: 104.4rem;
+}
+
+.img-hero {
+  width: 100%;
+  height: 60rem;
+  border-radius: 14px;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  width: 35.9rem;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-price {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn {
+  position: absolute;
+  right: 5%;
+  bottom: 17%;
+}
+
+.btn-reservation:link,
+.btn-reservation:visited {
+  text-decoration: none;
+  padding: 1.1rem 2.3rem 1.2rem 2.1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #8a2be2;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.btn-reservation:hover,
+.btn-reservation:active {
+  opacity: 90%;
+}
+
+.like-container {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+}
+
+.like {
+  position: relative;
+  z-index: 999;
+}
+
+.icon-like {
+  width: 2.89rem;
+  height: 2.89rem;
+}
+
+.like::after {
+  content: "";
+  padding: 2.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  z-index: -1;
+}
+
+/******************* FEATURED *******************/
+.section-featured {
+  padding: 6rem 9rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3rem;
+}
+
+/******************* GALLERY *******************/
+.section-gallery {
+  background-color: #f1f5fa;
+  padding: 8rem 9.1rem 7rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 5vw);
+  column-gap: 3.5rem;
+  row-gap: 3.4rem;
+}
+
+.gallery-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #222534;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(75%);
+  border-radius: 15px;
+}
+
+.gallery--item-1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery--item-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery--item-3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery--item-4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.gallery--item-5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery--item-6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery-text {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.gallery-name {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.gallery-location {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/******************* TESTIMONIAL *******************/
+.section-testimonial {
+  padding: 7rem 0 10rem 0;
+}
+
+.testimonial-heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #222534;
+  text-align: center;
+  margin-bottom: 9.8rem;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.testimonial-box {
+  width: 44rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  border: 1px solid #e7e7e7;
+  border-radius: 18px;
+
+  padding: 7.4rem 3.7rem 2.5rem;
+
+  position: relative;
+
+  margin-bottom: 4rem;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  border: solid 10px #e7e7e7;
+
+  position: absolute;
+  top: -25%;
+}
+
+.testimonial-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #222534;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #888aa2;
+  text-align: center;
+}
+
+.rating {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.rating-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #ffde70;
+}
+
+.view-all {
+  text-align: center;
+}
+
+.view-all-link:link,
+.view-all-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  border-bottom: 1px solid #1f4aa8;
+  transition: all 0.3s;
+}
+
+.view-all-link:active,
+.view-all-link:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.testimonial-out-left {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.testimonial-out-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.img-testimonial-out {
+  border-radius: 50%;
+  border: solid 5px #e7e7e7;
+}
+
+.img--1-out {
+  margin-top: 5rem;
+}
+
+.img--2-out {
+  margin-top: 17rem;
+}
+
+.img--3-out {
+  margin-top: 17rem;
+}
+
+.img--4-out {
+  justify-self: end;
+  margin-top: 10rem;
+}
